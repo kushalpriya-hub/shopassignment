@@ -1,0 +1,29 @@
+{
+  "name": "modular-monolith-task",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "start": "tsx src/app.ts",
+    "dev": "tsx watch src/app.ts",
+    "test": "tsx --test test/*.test.ts",
+    "boundaries": "tsx tools/check-boundaries.ts"
+  },
+  "//": "Nothing is required to run or test this. Editor type-checking is optional: npm i -D typescript @types/node, then npx tsc --noEmit",
+  "devDependencies": {
+    "tsx": "^4.23.15"
+  },
+  "description": "A working four-module shop. It does what it should; it just breaks every rule from Part 3 of the deck while doing it.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "esbuild": "^0.28.2"
+  },
+  "author": "",
+  "license": "ISC"
+}
