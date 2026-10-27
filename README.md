@@ -24,8 +24,7 @@ npx tsc --noEmit
 | `test/boundaries.test.ts` | red — you write the checker, then fix what it finds |
 | `test/event-bus.test.ts` | red — you finish the bus |
 
-The violations are all in `src/modules/orders/service.ts` and each is
-marked with a comment. Delete the comments as you fix them.
+
 
 One thing TypeScript makes easier to get wrong: a `import type { ... }`
 across a module boundary still couples the two modules. Your checker
